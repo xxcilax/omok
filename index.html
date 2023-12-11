@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오목 웹사이트</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8; /* 전체 배경색상 설정 */
+    }
+
+    header {
+  background: linear-gradient(to right, #000 50%, #fff 50%);
+  color: #000; /* 텍스트 색상을 검정으로 설정 */
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  background: linear-gradient(to right, #fff 50%, #000 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+    nav {
+      background-color: #c99f58;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #c99f58;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      color: #3498db;
+    }
+
+    section p {
+      line-height: 1.6;
+    }
+
+    .section-image {
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #c99f58;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+  <script>
+    function showInfo(sectionId) {
+      var infoId = "info-" + sectionId;
+      var infoElement = document.getElementById(infoId);
+      if (infoElement.style.display === "none") {
+        infoElement.style.display = "block";
+      } else {
+        infoElement.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>오목의 역사와 문화: 알아두면 즐거운 이야기</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#history">오목의 역사</a></li>
+      <li><a href="#rules">오목의 룰</a></li>
+      <li><a href="#strategies">기초 지식</a></li>
+      <li><a href="#related-sites">주형</a></li>
+      <li><a href="#related-sites">관련 사이트</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="history" class="section-image" onclick="showInfo('history')">
+        <h2>오목의 역사</h2>
+        <img src="https://img.lexica.art/80a55c64-c988-46f3-afe0-a45c2adb4b73_full.webp" alt="History" width="100%" style="max-width: 500px; margin-bottom: 20px;">
+        <div id="info-history" class="hidden">
+          <p>
+            오목의 기원은 중국의 황하유역이라는 설이 유력하며, 시기는 지금으로부터 약 4천년 전으로 추정되고 있다. 
+            오목에 관한 중국의 가장 오래된 기록은 BCE 2세기경 후한시대의 역사가 반고가 저술한 한서(漢書)라는 역사서이며 
+            오목두기를 "격오(格五)" 라고 하였다. 이후 오목은 중국에서 일본으로 전래되었으며 오랜 세월동안 발전하며 현대오목으로 이어졌다. 
+            현재 일본에는 현존하는 가장 오래된 오목서적인 오석정적집(五石定蹟集, 1856)이 전해지고 있다.
+          </p>
+          <p>
+            그러나 오목은 동북아시아 지역 뿐만 아니라 이집트와 그리스, 콜롬비아 등지에서도 이와 유사한 사료가 발굴됨에 따라 
+            어느 한 곳에서 유래되었다기보다는 세계 여러 곳에서 각각 독자적으로 발생하였을 가능성이 높다고 할 수 있다. 
+            또한 오목이 바둑의 여기(餘技)로서 시작되었다는 설이 있으나 초창기의 오목은 매우 단순하고 단조로운 형태의 놀이였기 때문에 
+            오히려 바둑보다 앞서 만들어졌을 것이라는 설도 제기되고 있다. 
+          </p>
+          <p>
+            1988년 8월 8일 스웨덴 스톡홀름에서 RIF(국제오목협회)가 탄생하였으며, 초창기 구성국은 일본, 소련, 스웨덴이었다. 
+            현재는 세계 20개국이 가입해 있고 1989년부터 세계 선수권 대회도 2년단위로 연다. 한국도 2001년 이래로 가입한 상태이다.
+          </p>
+          <p>
+            중국, 일본, 대만에서는 비교적 오목이 활성화 되어 있고 국내보다 상위권 플레이어들도 많은 편이다. 
+            서구권에서도 러시아, 에스토니아, 스웨덴, 체코, 헝가리 등 북, 동유럽을 중심으로 많이 하고 있는 보드게임 중 하나이다.
+          </p>
+          <p>
+            2011년 부터 세계온라인 통신 오목 대회인 CWC가 열려왔다.
+          </p>
+        </div>
+      </section>
+      
+
+    <section id="rules" class="section-image" onclick="showInfo('rules')">
+        <h2>오목의 룰</h2>
+        <img src="https://image.lexica.art/full_webp/2de63bd3-3a36-4703-b92d-e18b24a41ebd" alt="Rules" width="100%" style="max-width: 500px; margin-bottom: 20px;">
+        <div id="info-rules" class="hidden">
+          <h3>오목룰(일반룰)</h3>
+          <p>일상적으로 한국 사람들끼리 가볍게 대전할 때 자주 사용되던 룰입니다. 흑백 모두 3-3은 금지되며, 4-4는 금지되지 않습니다. 장목은 흑백 모두 둘 수 있지만 승리 조건으로 인정되지는 않습니다. 흑이 절대적으로 유리하기 때문에 대부분의 오목 게임과 대회에서는 사용되지 않습니다.</p>
+      
+          <h3>렌주룰</h3>
+          <p>렌주룰은 흑의 일방적인 유리함을 상쇄시키기 위해 생겨났습니다. 이 룰은 일본의 보드게임 "連珠(れんじゅ)"에서 유래되었으며, 흑만 3-3과 4-4, 장목이 금지됩니다. 4-3은 금수가 아니지만 4-3-3과 4-4-3은 금수이며, 금지된 수를 놓으면서 동시에 5도 만들어지는 경우에는 흑 승리로 인정됩니다. 장목은 흑이 놓으면 반칙패로 지게 됩니다. 백은 장목을 두어도 그대로 이길 수 있습니다.</p>
+          <p>렌주룰에서 흑이 이기는 방법은 백을 계속해서 공격하여 몰아붙이다가 최후에 4-3을 만드는 방법뿐입니다. 그러나 백은 3-3 만들기, 4-4 만들기, 4-3 만들기, 흑의 금수를 유도하기 등 다양한 이길 수 있는 방법이 있습니다.</p>
+          <p>렌주룰에서는 흑이 유리하다고 생각할 수 있지만, 19줄짜리 바둑판에서는 흑돌이 수를 늘리며 계속 주도권을 이어가기 편합니다. 중급 이상의 실력자끼리 두면 흑돌이 더 유리해질 수 있습니다.</p>
+      
+          <h3>소시로프-N 룰</h3>
+          <p>소시로프-N 룰은 에스토니아의 Soosõrv Ants가 고안한 룰로, 백이 4수를 두고 선언 할 수 있는 5수의 개수가 최대 N개입니다. 현재 국제 룰은 소시로프-8 룰이며, 2017년부터 국제 룰로 사용되고 있습니다.</p>
+          <p>렌주룰과 달리 임시 백이 4수를 둔 후에 흑이 5수를 둠으로써 게임이 시작됩니다. 백은 5수 중에서 하나를 선택하고 나머지 5수는 흑이 모두 둡니다. 그 후에는 렌주룰과 동일한 규칙으로 진행됩니다.</p>
+        </div>
+      </section>
+      
+      
+
+      <section id="strategies" class="section-image" onclick="showInfo('strategies')">
+        <h2>기초 지식</h2>
+        <img src="https://img.lexica.art/bf4327ec-f006-49c3-b1b9-82e11a3eca32_full.webp" alt="Strategies" width="100%" style="max-width: 500px; margin-bottom: 20px;">
+        <div id="info-strategies" class="hidden">
+          <p>
+            <strong>3.1. 기초</strong>
+            <br>
+            <strong>장목 (Overline)</strong>
+            <br>
+            - 같은 색깔의 돌이 6칸 이상 이어진 상태.
+            <br>
+            - 일반룰에서는 장목을 만들 수 있지만 승리로 이어지지 않음.
+            <br>
+            - 렌주룰에서는 흑은 착수 금지로 장목을 만들 수 없지만 백은 만들면 즉시 승리.
+            <br><br>
+            <strong>5목 (Five in a row, 오목)</strong>
+            <br>
+            - 5칸 연속으로 같은 색깔의 돌이 있는 상태.
+            <br>
+            - 오목에서 5목을 만들면 승리.
+            <br>
+            - 렌주룰에서는 흑이 금수(3-3, 4-4, 장목)가 되어도 동시에 5목이 만들어지면 이김.
+            <br><br>
+            <strong>4목 (Four, 사)</strong>
+            <br>
+            - 한 수 첨가하여 5목을 만들 수 있는 상태.
+            <br>
+            - 크게 열린 4와 닫힌 4로 나눔.
+            <br><br>
+            <strong>열린 4 (Straight Four, 스트레이트 사)</strong>
+            <br>
+            - 4목에서 양 끝이 막혀있지 않은 상태.
+            <br>
+            - 대표적인 외통수로, 만들면 다음 턴에 상대가 5목을 만들지 않는 이상 승리.
+            <br><br>
+            
+            <strong>닫힌 4 (Half open Four, 반열린 사)</strong>
+            <br>
+            - 4목에서 양 끝 중 한 쪽이 상대방의 돌에 의해 막혀있는 상태.
+            <br>
+            - 다음 턴에 상대가 막을 수 있지만 절대선수로서 특별한 수.
+            <br><br>
+            
+            <strong>띈 4 (띈 사)</strong>
+            <br>
+            - 4목 중 4개의 돌이 연속이 아닌 경우.
+            <br>
+            - 닫힌 4와 같이 절대선수로 작용하며, 상대가 막아야 하는 수.
+            <br><br>
+            
+            <strong>4-4 (Double-Four, 사사)</strong>
+            <br>
+            - 일반룰에서는 흑백 모두 허용되지만 렌주룰에서는 백에게만 허용되는 승리법.
+            <br>
+            - 4목을 동시에 두 개 이상 만들면 승리.
+            <br><br>
+            
+            <strong>3목 (Three, 삼)</strong>
+            <br>
+            - 한 수 첨가하여 열린 4를 만들 수 있는 상태.
+            <br>
+            - 다음 차례의 상대는 4목을 만들지 않는 이상 반드시 3목을 방어.
+            <br><br>
+            
+            <strong>3-3 (Double-Three, 삼삼)</strong>
+            <br>
+            - 일반룰에선 흑백 모두 금지되지만 렌주룰에서는 백에게만 허용되는 승리법.
+            <br>
+            - 3목을 동시에 두 개 만들면 승리. 쌍삼이라고도 함.
+            <br><br>
+            
+            <strong>4-3 (Four-Three, 사삼)</strong>
+            <br>
+            - 4목과 3목을 동시에 만드는 것.
+            <br>
+            - 흑이 이기기 위한 중요한 전략.
+            
+      
+        
+          </p>
+        </div>
+    </section>
+    <section id="matrix" class="section-image" onclick="showInfo('matrix')">
+      <h2>주형</h2>
+      <img src="data:image/jpeg;base64,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" alt="Rules" width="100%" style="max-width: 500px; margin-bottom: 20px;">
+      <div id="info-matrix" class="hidden">
+        <p>렌주 오프닝 룰에서 흑의 첫 수는 무조건 천원으로, 백은 그 대응수로 천원과 인접한 3x3 정사각형(한 칸 이내)로 두어야 한다. 이 때 흑이 천원으로부터 두 칸 떨어진 5x5 정사각형에 3번째 수를 놓는 패턴을 주형이라고 한다. 백이 천원과 바로 가로세로로 접하게 막는 것을 직접막기, 그러한 주형을 직접주형이라고 하며, 백이 천원과 대각선으로 접하게 막는 것을 간접막기, 그러한 주형을 간접주형이라고 한다. 간접주형과 직접주형은 대칭되는 모양을 제외하고 총 26가지가 있다. 렌주 오프닝룰에서는 무조건 26주형 중 하나로 시작해야 한다.</p>
+      </div>
+    </section>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        .hidden {
+          display: none;
+        }
+      </style>
+    </head>
+    <body>
+    
+    <section id="related-sites">
+      <h2>관련 사이트</h2>
+      <ul>
+        <li>
+          <a href="https://renjuoffline.com/" class="section-image" target="_blank" onclick="toggleInfo('info-site1')">
+            <img src="https://wrtn-image-user-output.s3.ap-northeast-2.amazonaws.com/64f75d4ce001af7f9bcb234a/3a89983d-03d4-4b63-a4ed-2ce2402e94a3.png" alt="렌주 오프라인" width="100%" style="max-width: 200px; margin-bottom: 10px;">
+          </a>
+          <div id="info-site1" class="hidden">
+            <p>렌주 오프라인</p>
+          </div>
+        </li>
+        <li>
+          <a href="https://cafe.naver.com/koreaomok" class="section-image" target="_blank" onclick="toggleInfo('info-site2')">
+            <img src="https://wrtn-image-user-output.s3.ap-northeast-2.amazonaws.com/64f75d4ce001af7f9bcb234a/4c816caf-3382-4789-9e85-623e568da220.png" alt="한국 오목 협회" width="100%" style="max-width: 200px; margin-bottom: 10px;">
+          </a>
+          <div id="info-site2" class="hidden">
+            <p>한국 오목 협회</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    
+    <script>
+      function toggleInfo(infoId) {
+        var infoDiv = document.getElementById(infoId);
+        infoDiv.classList.toggle('hidden');
+      }
+    </script>
+    
+    </body>
+    </html>
+    
+      <div class="container">
+        <div class="message">오목 OMOK</div>
+        <div class="buttons">
+            <button id="withdraw">한 번만~</button>
+            <button id="reload">한 판 더 !</button>
+        </div>
+        <canvas id='canvas'></canvas>
+    </div>
+    <script src="omok.js"></script>
+</body>
+</html>
